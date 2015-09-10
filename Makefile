@@ -1,5 +1,5 @@
 
-NAME = nibbler
+NAME = snake
 
 SRC =	game.class.cpp \
 		main.cpp \
@@ -22,7 +22,7 @@ $(NAME): $(DIROBJS)
 	@make -C libs/ncurses/
 	@make -C libs/sdl/
 	@make -C libs/sfml/
-	@echo "Création de l'executable "nibbler" ..."
+	@echo "Création de l'executable "snake created ..."
 	$(CC) $(CFLAGS) -g -o $@ $^ $(HEAD) $(LIB) -ldl
 
 $(DIROBJ)%.o: $(DIRSRC)%.cpp
