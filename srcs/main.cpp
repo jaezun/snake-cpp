@@ -7,7 +7,7 @@ int main(int ac, char *av[])
 	srand(time(NULL));
 	if (ac != 2 && ac != 4)
 	{
-		std::cout << "Usage : ./nibbler <library> <width> <height> OR ./nibbler <library> With lib : 1 = Ncurses, 2 = SDL" << std::endl;
+		std::cout << "Usage : ./snake <library> <width> <height> OR ./snake <library> With lib : 1 = Ncurses, 2 = SDL" << std::endl;
 		return (0);
 	}
 
